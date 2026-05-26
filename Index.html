@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maresme Home Care | Supervisión y cuidado de viviendas</title>
+  <meta name="description" content="Servicio de supervisión y cuidado de viviendas en el Maresme. Tranquilidad y seguimiento personalizado para propietarios no residentes." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://maresmehomecare.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://maresmehomecare.com/" />
+  <meta property="og:title" content="Maresme Home Care | Supervisión y cuidado de viviendas" />
+  <meta property="og:description" content="Servicio de supervisión y cuidado de viviendas en el Maresme. Tranquilidad y seguimiento personalizado." />
+  <meta property="og:image" content="https://maresmehomecare.com/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo" aria-label="Maresme Home Care">
+        <span class="logo-mark">MHC</span>
+        <span class="logo-text">Maresme<br><em>Home Care</em></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#tarifas">Tarifas</a></li>
+          <li><a href="#zona">Zona</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://wa.me/34668536122?text=Hola,%20me%20gustaría%20información%20sobre%20el%20servicio%20de%20supervisión%20de%20viviendas." class="btn-wa-header" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.825L.057 23.428a.5.5 0 0 0 .609.61l5.703-1.497A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.821 9.821 0 0 1-5.012-1.374l-.36-.214-3.724.977.995-3.634-.234-.374A9.822 9.822 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        WhatsApp
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/34668536122?text=Hola,%20me%20gustaría%20información%20sobre%20el%20servicio%20de%20supervisión%20de%20viviendas." class="wa-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.825L.057 23.428a.5.5 0 0 0 .609.61l5.703-1.497A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12-0zm0 21.818a9.821 9.821 0 0 1-5.012-1.374l-.36-.214-3.724.977.995-3.634-.234-.374A9.822 9.822 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+  </a>
+
+  <main>
+
+    <!-- SECCIÓN 1: HERO -->
+    <section class="hero" id="inicio" aria-label="Inicio">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&q=80&auto=format&fit=crop" alt="Villa mediterránea en el Maresme" class="hero-img" loading="eager" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content fade-in">
+        <p class="hero-eyebrow">Maresme Home Care</p>
+        <h1 class="hero-title">Tu casa no<br>se queda sola</h1>
+        <p class="hero-sub">Servicio discreto y profesional para propietarios<br class="desktop-br"> que no residen todo el año en su vivienda.</p>
+        <div class="hero-ctas">
+          <a href="#contacto" class="btn-primary">Consultar disponibilidad</a>
+          <a href="https://wa.me/34668536122?text=Hola,%20me%20gustaría%20información%20sobre%20el%20servicio%20de%20supervisión%20de%20viviendas." class="btn-secondary" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.825L.057 23.428a.5.5 0 0 0 .609.61l5.703-1.497A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.821 9.821 0 0 1-5.012-1.374l-.36-.214-3.724.977.995-3.634-.234-.374A9.822 9.822 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            Hablar por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span>
+        <p>Scroll</p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: EL PROBLEMA -->
+    <section class="problem section-pad" id="problema">
+      <div class="container">
+        <div class="section-label reveal">El problema</div>
+        <h2 class="section-title reveal">Una vivienda vacía necesita<br>más que una alarma</h2>
+        <p class="section-sub reveal">Los sistemas de seguridad avisan cuando algo malo ya ha ocurrido.<br class="desktop-br"> Nosotros actuamos antes.</p>
+        <div class="problem-cards">
+          <div class="problem-card reveal">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Supervisión periódica</h3>
+            <p>Visitas regulares a su propiedad para comprobar que todo está en orden, antes de que cualquier problema se agrave.</p>
+          </div>
+          <div class="problem-card reveal">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Prevención de incidencias</h3>
+            <p>Detectamos humedades, averías, acceso no autorizado o cualquier anomalía antes de que se convierta en un problema mayor.</p>
+          </div>
+          <div class="problem-card reveal">
+            <div class="problem-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Tranquilidad real</h3>
+            <p>Fotografías y reportes regulares para que sepa exactamente cómo está su vivienda, esté donde esté.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: SERVICIOS -->
+    <section class="services section-pad" id="servicios">
+      <div class="container">
+        <div class="section-label reveal">Servicios</div>
+        <h2 class="section-title reveal">¿Qué hacemos<br>por usted?</h2>
+        <p class="section-sub reveal">Un servicio integral diseñado para que su propiedad esté siempre<br class="desktop-br"> en las mejores condiciones.</p>
+        <div class="services-grid">
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <h3>Apertura y ventilación</h3>
+            <p>Abrimos, ventilamos y volvemos a cerrar su vivienda correctamente en cada visita.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Revisión de suministros</h3>
+            <p>Comprobamos agua, electricidad y gas para detectar cualquier anomalía o fuga.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <h3>Supervisión interior y exterior</h3>
+            <p>Inspección completa de todas las estancias, terraza, jardín y accesos de la propiedad.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <h3>Reporte fotográfico</h3>
+            <p>Enviamos fotografías detalladas tras cada visita para que pueda ver el estado real de su casa.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Coordinación de servicios</h3>
+            <p>Gestionamos y coordinamos técnicos, fontaneros o cualquier profesional que su vivienda necesite.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>Inspecciones visuales</h3>
+            <p>Control exhaustivo de puertas, ventanas, cerraduras y estructuras para detectar daños o accesos indebidos.</p>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Control preventivo</h3>
+            <p>Anticipamos problemas antes de que sucedan: humedades, plagas, desperfectos o equipos deteriorados.</p>
+          </div>
+
+          <div class="service-card service-card--cta reveal">
+            <p class="service-cta-text">¿Necesita algo específico?</p>
+            <a href="https://wa.me/34668536122?text=Hola,%20tengo%20una%20consulta%20específica%20sobre%20mi%20vivienda." class="btn-primary" target="_blank" rel="noopener">Consúltenos</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: CÓMO FUNCIONA -->
+    <section class="how section-pad" id="como-funciona">
+      <div class="container">
+        <div class="section-label reveal">El proceso</div>
+        <h2 class="section-title reveal">Cómo funciona</h2>
+        <p class="section-sub reveal">Simple, transparente y adaptado a cada propietario.</p>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-num">01</div>
+            <div class="timeline-body">
+              <h3>Contacto inicial</h3>
+              <p>Nos llama o escribe por WhatsApp. Le respondemos en el mismo día para entender su situación y necesidades concretas.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-num">02</div>
+            <div class="timeline-body">
+              <h3>Evaluación personalizada</h3>
+              <p>Visitamos su propiedad para conocerla en detalle. Sin compromiso. Elaboramos una propuesta a medida.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-num">03</div>
+            <div class="timeline-body">
+              <h3>Supervisión regular</h3>
+              <p>Realizamos visitas periódicas según el plan acordado. Cada visita sigue un protocolo riguroso y documentado.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-num">04</div>
+            <div class="timeline-body">
+              <h3>Informes con fotografías</h3>
+              <p>Tras cada visita recibe un reporte completo con fotografías del estado de su vivienda, directamente en su móvil.</p>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-num">05</div>
+            <div class="timeline-body">
+              <h3>Tranquilidad total</h3>
+              <p>Sabe que su propiedad está en buenas manos. Puede desconectar. Nosotros velamos por ella.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: DIFERENCIA -->
+    <section class="difference section-pad" id="diferencia">
+      <div class="container">
+        <div class="section-label reveal">Por qué elegirnos</div>
+        <h2 class="section-title reveal">Pocas viviendas.<br>Mucha atención.</h2>
+        <p class="section-sub reveal">Limitamos deliberadamente el número de propiedades que gestionamos<br class="desktop-br"> para garantizar una atención excepcional en cada una.</p>
+
+        <div class="compare-wrap reveal">
+          <div class="compare-col compare-col--other">
+            <div class="compare-header">
+              <span>Otros servicios</span>
+            </div>
+            <ul class="compare-list">
+              <li class="compare-no">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Gestión masiva de propiedades
+              </li>
+              <li class="compare-no">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Diferentes personas cada vez
+              </li>
+              <li class="compare-no">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Informes genéricos o sin fotos
+              </li>
+              <li class="compare-no">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Contratos largos y permanencia
+              </li>
+              <li class="compare-no">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Respuesta lenta ante incidencias
+              </li>
+            </ul>
+          </div>
+
+          <div class="compare-divider" aria-hidden="true">
+            <span>vs</span>
+          </div>
+
+          <div class="compare-col compare-col--mhc">
+            <div class="compare-header">
+              <span>Maresme Home Care</span>
+            </div>
+            <ul class="compare-list">
+              <li class="compare-yes">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Cartera reducida y selectiva
+              </li>
+              <li class="compare-yes">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Misma persona de referencia siempre
+              </li>
+              <li class="compare-yes">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Reporte fotográfico tras cada visita
+              </li>
+              <li class="compare-yes">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Sin permanencia, sin letra pequeña
+              </li>
+              <li class="compare-yes">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Disponibilidad y respuesta inmediata
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: TARIFAS -->
+    <section class="pricing section-pad" id="tarifas">
+      <div class="container">
+        <div class="section-label reveal">Tarifas</div>
+        <h2 class="section-title reveal">Inversión en tranquilidad</h2>
+        <p class="section-sub reveal">Cada vivienda tiene sus particularidades. Le hacemos una propuesta a medida.</p>
+
+        <div class="pricing-card reveal">
+          <div class="pricing-card-inner">
+            <div class="pricing-from">Desde</div>
+            <div class="pricing-price">120<span>€</span><small>/mes</small></div>
+            <p class="pricing-desc">Cada vivienda es diferente. El precio final depende de la frecuencia de visitas, la superficie y los servicios requeridos.</p>
+            <ul class="pricing-includes">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Visitas periódicas incluidas
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Reporte fotográfico tras cada visita
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Atención directa y personalizada
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Sin permanencia mínima
+              </li>
+            </ul>
+            <a href="https://wa.me/34668536122?text=Hola,%20me%20gustaría%20solicitar%20una%20valoración%20para%20mi%20vivienda." class="btn-primary btn-full" target="_blank" rel="noopener">Solicitar valoración personalizada</a>
+            <p class="pricing-note">Sin compromiso · Sin permanencia · Respuesta en el mismo día</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 7: ZONA -->
+    <section class="zone section-pad" id="zona">
+      <div class="container">
+        <div class="section-label reveal">Área de servicio</div>
+        <h2 class="section-title reveal">Zona de cobertura</h2>
+        <p class="section-sub reveal">Operamos en el Maresme con un conocimiento profundo del territorio.</p>
+
+        <div class="zone-layout reveal">
+          <div class="zone-map">
+            <div class="map-visual">
+              <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" aria-label="Mapa esquemático del Maresme" role="img">
+                <!-- Mar -->
+                <rect x="200" y="0" width="100" height="400" fill="#1F2A44" opacity="0.08" rx="0"/>
+                <!-- Costa línea -->
+                <path d="M200 0 Q195 100 198 200 Q195 300 200 400" stroke="#A88E63" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+                <!-- Municipios puntos -->
+                <circle cx="160" cy="120" r="6" fill="#A88E63"/>
+                <text x="145" y="108" font-family="Montserrat,sans-serif" font-size="10" fill="#2C2C2C" text-anchor="middle">Alella</text>
+                <circle cx="170" cy="165" r="6" fill="#A88E63"/>
+                <text x="155" y="153" font-family="Montserrat,sans-serif" font-size="10" fill="#2C2C2C" text-anchor="middle">El Masnou</text>
+                <circle cx="175" cy="210" r="6" fill="#A88E63"/>
+                <text x="160" y="198" font-family="Montserrat,sans-serif" font-size="10" fill="#2C2C2C" text-anchor="middle">Premià</text>
+                <circle cx="172" cy="255" r="6" fill="#A88E63"/>
+                <text x="157" y="243" font-family="Montserrat,sans-serif" font-size="10" fill="#2C2C2C" text-anchor="middle">Vilassar</text>
+                <circle cx="165" cy="300" r="6" fill="#A88E63"/>
+                <text x="150" y="288" font-family="Montserrat,sans-serif" font-size="10" fill="#2C2C2C" text-anchor="middle">Llavaneres</text>
+                <circle cx="158" cy="345" r="6" fill="#A88E63"/>
+                <text x="143" y="333" font-family="Montserrat,sans-serif" font-size="10" fill="#2C2C2C" text-anchor="middle">Sant Vicenç</text>
+                <!-- Etiqueta mar -->
+                <text x="242" y="200" font-family="Playfair Display,serif" font-size="11" fill="#1F2A44" opacity="0.5" text-anchor="middle" transform="rotate(90,242,200)">Mediterráneo</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="zone-towns">
+            <div class="zone-town-list">
+              <div class="zone-town">
+                <span class="zone-dot"></span>
+                <span>Alella</span>
+              </div>
+              <div class="zone-town">
+                <span class="zone-dot"></span>
+                <span>El Masnou</span>
+              </div>
+              <div class="zone-town">
+                <span class="zone-dot"></span>
+                <span>Premià de Dalt</span>
+              </div>
+              <div class="zone-town">
+                <span class="zone-dot"></span>
+                <span>Premià de Mar</span>
+              </div>
+              <div class="zone-town">
+                <span class="zone-dot"></span>
+                <span>Vilassar de Dalt</span>
+              </div>
+              <div class="zone-town">
+                <span class="zone-dot"></span>
+                <span>Vilassar de Mar</span>
+              </div>
+              <div class="zone-town">
+                <span class="zone-dot"></span>
+                <span>Sant Andreu de Llavaneres</span>
+              </div>
+              <div class="zone-town">
+                <span class="zone-dot"></span>
+                <span>Sant Vicenç de Montalt</span>
+              </div>
+            </div>
+            <div class="zone-note">
+              <p>¿Su propiedad está en otra zona del Maresme?</p>
+              <a href="https://wa.me/34668536122?text=Hola,%20mi%20vivienda%20está%20en%20otra%20zona%20del%20Maresme,%20¿podríais%20atenderme?" class="btn-secondary btn-small" target="_blank" rel="noopener">Consúltenos sin compromiso</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 8: CONFIANZA -->
+    <section class="trust section-pad" id="confianza">
+      <div class="container">
+        <div class="section-label reveal">Nuestro compromiso</div>
+        <h2 class="section-title reveal">Lo que nos define</h2>
+
+        <div class="trust-grid">
+          <div class="trust-item reveal">
+            <div class="trust-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <h3>Seguimiento fotográfico</h3>
+            <p>Documentamos cada visita con fotografías reales. Usted ve exactamente el estado de su vivienda, siempre.</p>
+          </div>
+          <div class="trust-item reveal">
+            <div class="trust-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Atención personalizada</h3>
+            <p>No somos una empresa masiva. Cada propietario recibe atención directa, cercana y sin intermediarios.</p>
+          </div>
+          <div class="trust-item reveal">
+            <div class="trust-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Misma persona siempre</h3>
+            <p>Su vivienda la cuida siempre la misma persona de referencia, que la conoce a fondo y es de su confianza.</p>
+          </div>
+          <div class="trust-item reveal">
+            <div class="trust-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3>Servicio discreto</h3>
+            <p>Actuamos con la máxima discreción. Su vivienda, su privacidad y su tranquilidad son nuestra prioridad absoluta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 9: FAQ -->
+    <section class="faq section-pad" id="preguntas">
+      <div class="container">
+        <div class="section-label reveal">Preguntas frecuentes</div>
+        <h2 class="section-title reveal">Todo lo que necesita saber</h2>
+
+        <div class="faq-list">
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿Con qué frecuencia visitáis la vivienda?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>La frecuencia se adapta a sus necesidades y se acuerda en el plan personalizado. Lo más habitual es una o dos visitas por semana, aunque podemos ajustarlo a su situación particular.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿El servicio incluye atención en caso de emergencias?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>Sí. Ante cualquier incidencia urgente — fuga de agua, entrada no autorizada, daño por temporal — actuamos con la mayor rapidez posible y le contactamos de inmediato para coordinar la solución.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿Hay permanencia mínima?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>No. Trabajamos sin permanencia mínima. Confiamos en que la calidad de nuestro servicio sea la razón por la que nos elige, no un contrato obligatorio.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿Cómo recibo la información de cada visita?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>Recibirá un reporte por WhatsApp o email tras cada visita. Incluye fotografías actualizadas de las principales estancias y una valoración del estado general de la propiedad.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿Tenéis acceso a las llaves de mi casa?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>Sí, y lo gestionamos con total seguridad y discreción. Las llaves quedan bajo nuestra custodia y responsabilidad, con un protocolo claro de entrega y devolución siempre que usted lo requiera.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿Podéis coordinar reparaciones o servicios externos?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>Sí. Gestionamos y coordinamos cualquier servicio que necesite su vivienda: fontaneros, electricistas, jardineros, empresas de limpieza… Usted no tiene que preocuparse de nada.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿Cómo empezamos?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>El proceso es muy sencillo: contáctenos por WhatsApp o teléfono, concertamos una visita sin compromiso a su propiedad y elaboramos una propuesta personalizada.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿Cuántas propiedades gestionáis a la vez?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>De forma deliberada, limitamos el número de viviendas que gestionamos simultáneamente. Esto es lo que nos permite garantizar la atención y dedicación que cada propiedad merece.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿El servicio está disponible todo el año?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>Sí, operamos los 365 días del año. Especialmente durante los meses de invierno o las temporadas en que usted no reside en la zona, es cuando el servicio resulta más valioso.</p>
+            </div>
+          </div>
+
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">
+              ¿Mi vivienda puede estar en una zona no listada?
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <p>Nuestra zona principal es el Maresme, pero podemos estudiar propiedades en zonas limítrofes. Consúltenos sin compromiso y le daremos una respuesta honesta.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 10: CTA FINAL -->
+    <section class="cta-final section-pad" id="contacto">
+      <div class="cta-final-bg">
+        <img src="https://images.unsplash.com/photo-1613490493576-7fde63329c14?w=1600&q=80&auto=format&fit=crop" alt="Casa en el Maresme al atardecer" loading="lazy" />
+        <div class="cta-final-overlay"></div>
+      </div>
+      <div class="container">
+        <div class="cta-final-content reveal">
+          <p class="cta-eyebrow">Maresme Home Care</p>
+          <h2 class="cta-title">Su casa,<br><em>mi compromiso.</em></h2>
+          <p class="cta-sub">Plazas limitadas. Atención garantizada.</p>
+          <div class="cta-actions">
+            <a href="https://wa.me/34668536122?text=Hola,%20me%20gustaría%20información%20sobre%20el%20cuidado%20de%20mi%20vivienda%20en%20el%20Maresme." class="btn-cta-wa" target="_blank" rel="noopener">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.825L.057 23.428a.5.5 0 0 0 .609.61l5.703-1.497A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.821 9.821 0 0 1-5.012-1.374l-.36-.214-3.724.977.995-3.634-.234-.374A9.822 9.822 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+              Escribir por WhatsApp
+            </a>
+            <a href="tel:+34668536122" class="btn-cta-tel">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.6a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              668 536 122
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="logo logo--footer" aria-label="Maresme Home Care">
+            <span class="logo-mark">MHC</span>
+            <span class="logo-text">Maresme<br><em>Home Care</em></span>
+          </a>
+          <p class="footer-tagline">Cuidamos su vivienda<br>como si fuera la nuestra.</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#como-funciona">Cómo funciona</a></li>
+            <li><a href="#tarifas">Tarifas</a></li>
+            <li><a href="#zona">Zona de servicio</a></li>
+            <li><a href="#preguntas">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <a href="tel:+34668536122" class="footer-phone">668 536 122</a>
+          <a href="https://wa.me/34668536122" class="footer-wa" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.825L.057 23.428a.5.5 0 0 0 .609.61l5.703-1.497A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.821 9.821 0 0 1-5.012-1.374l-.36-.214-3.724.977.995-3.634-.234-.374A9.822 9.822 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <p class="footer-web">maresmehomecare.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Maresme Home Care. Todos los derechos reservados.</p>
+        <p class="footer-legal">Servicio de supervisión y cuidado de viviendas en el Maresme.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
