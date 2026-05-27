@@ -63,10 +63,11 @@
   }
   .section-title {
     font-family: var(--font-titulo);
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 500;
+    font-size: 37px;
+        font-weight: 500;
     color: var(--azul);
     line-height: 1.2;
+
     margin-bottom: 20px;
   }
   .section-sub {
@@ -84,7 +85,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--azul);
+    background: #067b1d;
     color: #fff;
     font-family: var(--font-texto);
     font-size: 0.88rem;
@@ -95,7 +96,7 @@
     transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
   }
   .btn-primary:hover {
-    background: #2a3a5c;
+   background: #2e7a3d; 
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(31,42,68,.22);
   }
@@ -121,12 +122,14 @@
   .btn-secondary.btn-small {
     font-size: 0.82rem;
     padding: 12px 22px;
-    color: var(--azul);
+    
+    color: white;
     border-color: var(--dorado);
+    background-color: #067b1d;
   }
   .btn-secondary.btn-small:hover {
-    background: var(--arena);
-    border-color: var(--dorado);
+     background: #2e7a3d; 
+   border-color: var(--dorado);
   }
   .btn-full { width: 100%; justify-content: center; }
   
@@ -370,6 +373,16 @@
     font-size: clamp(1rem, 2vw, 1.15rem);
     color: rgba(255,255,255,.8);
     font-weight: 300;
+        font-size: larger;
+    max-width: 520px;
+    margin-bottom: 44px;
+    line-height: 1.7;
+  }
+  .hero-sub-sub{
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255,255,255,.8);
+    font-weight: 300;
+        font-size: medium;
     max-width: 520px;
     margin-bottom: 44px;
     line-height: 1.7;
@@ -463,6 +476,7 @@
     padding: 32px 28px;
     transition: background var(--transition), border-color var(--transition), transform var(--transition);
   }
+  
   .service-card:hover {
     background: rgba(255,255,255,.09);
     border-color: rgba(168,142,99,.5);
@@ -1091,5 +1105,39 @@
     /* CTA */
     .cta-actions { flex-direction: column; }
     .btn-cta-wa, .btn-cta-tel { width: 100%; justify-content: center; }
+        /*Nuevo*/
+    .hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-title{
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .hero-text{
+    width: 100%;
+  }
+
+  .hero-image{
+    width: 100%;
+  }
+
+  .hero-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   }
   
+
+
+
+  .contenedorcontendorgrande{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
