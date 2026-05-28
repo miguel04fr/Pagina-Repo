@@ -421,7 +421,7 @@
   }
   
   /* ---- PROBLEMA ---- */
-  .problem { background: var(--blanco); }
+  .problem { background: #FAF9F7; }
   .problem-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1211,3 +1211,118 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* ---- MODO OSCURO: variables ---- */
+[data-theme="dark"] {
+  /* --azul NO se toca, se queda como #1F2A44 */
+  --arena:  #2A3347;
+  --blanco: #141B2A;
+  --texto:  #D8D0C4;
+  --dorado: #C4A97A;
+  --gris:   #8A9BB8;
+  --gris-l: #1C2436;
+}
+
+/* ---- BOTÓN TEMA ---- */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.25);
+  color: #fff;
+  flex-shrink: 0;
+  transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+.theme-toggle:hover {
+  background: rgba(255,255,255,.12);
+  transform: rotate(20deg);
+}
+.header.scrolled .theme-toggle {
+  border-color: rgba(31,42,68,.2);
+  color: var(--azul);
+}
+[data-theme="dark"] .header.scrolled .theme-toggle {
+  border-color: rgba(200,200,200,.2);
+  color: var(--dorado);
+}
+
+/* Muestra sol en modo oscuro, luna en modo claro */
+/* Reemplaza las dos líneas de icon-sun e icon-moon que tenías */
+.icon-sun, .icon-moon {
+  font-size: 18px;
+  line-height: 1;
+}
+.icon-moon { display: none; }
+[data-theme="dark"] .icon-sun  { display: none; }
+[data-theme="dark"] .icon-moon { display: block; }
+/* ---- AJUSTES DARK: secciones con fondo fijo ---- */
+[data-theme="dark"] .how            { background: #141B2A !important; }
+[data-theme="dark"] .pricing        { background: #141B2A !important; }
+[data-theme="dark"] .faq            { background: #141B2A !important; }
+[data-theme="dark"] .difference     { background: #1C2436 !important; }
+[data-theme="dark"] .trust          { background: #1C2436 !important; }
+[data-theme="dark"] .zone           { background: #1C2436 !important; }
+
+[data-theme="dark"] .trust-item          { background: rgba(255,255,255,.04) !important; border-color: rgba(255,255,255,.07) !important; }
+[data-theme="dark"] .pricing-card-inner  { background: #1C2436 !important; border-color: rgba(255,255,255,.08) !important; }
+[data-theme="dark"] .pricing-includes    { background: rgba(255,255,255,.05) !important; }
+[data-theme="dark"] .zone-note           { background: #1C2436 !important; border-color: rgba(255,255,255,.08) !important; }
+[data-theme="dark"] .map-visual          { background: #1C2436 !important; }
+[data-theme="dark"] .compare-col--other  { background: #1C2436 !important; }
+[data-theme="dark"] .compare-col--mhc    { background: #0D1420 !important; }
+[data-theme="dark"] .compare-divider     { background: #1C2436 !important; }
+
+[data-theme="dark"] .footer              { background: #0D1420 !important; }
+
+/* Header scrolled en dark */
+[data-theme="dark"] .header.scrolled {
+  background: rgba(13, 20, 32, 0.95) !important;
+}
+[data-theme="dark"] .header.scrolled .logo-text       { color: rgba(255,255,255,.9) !important; }
+[data-theme="dark"] .header.scrolled .nav a            { color: rgba(255,255,255,.65) !important; }
+[data-theme="dark"] .header.scrolled .nav a:hover      { color: #fff !important; }
+[data-theme="dark"] .header.scrolled .menu-toggle span { background: rgba(255,255,255,.85) !important; }
+
+[data-theme="dark"] .section-title { color: #E8DDCF !important; }
+[data-theme="dark"] .section-sub   { color: #8A9BB8 !important; }
+[data-theme="dark"] .section-label { color: var(--dorado) !important; }
+
+/* Títulos de cards */
+[data-theme="dark"] .problem-card h3   { color: #E8DDCF !important; }
+[data-theme="dark"] .timeline-body h3  { color: #E8DDCF !important; }
+[data-theme="dark"] .trust-item h3     { color: #E8DDCF !important; }
+[data-theme="dark"] .zone-town         { color: #E8DDCF !important; }
+[data-theme="dark"] .zone-note p       { color: #E8DDCF !important; }
+[data-theme="dark"] .faq-q             { color: #E8DDCF !important; }
+[data-theme="dark"] .faq-a p           { color: #8A9BB8 !important; }
+[data-theme="dark"] .pricing-price     { color: #E8DDCF !important; }
+[data-theme="dark"] .pricing-desc      { color: #8A9BB8 !important; }
+[data-theme="dark"] .pricing-includes li { color: #E8DDCF !important; }
+[data-theme="dark"] .compare-no        { color: #8A9BB8 !important; }
+[data-theme="dark"] .timeline-body p   { color: #8A9BB8 !important; }
+[data-theme="dark"] .problem-card p    { color: #8A9BB8 !important; }
+[data-theme="dark"] .trust-item p      { color: #8A9BB8 !important; }
+
+/* Body general */
+[data-theme="dark"] body { color: #D8D0C4 !important; }
+
+/* Transición suave al cambiar tema */
+body {
+  transition: background 0.4s ease, color 0.4s ease;
+}
+/* FORZADO FINAL — debe estar al final del archivo */
+html[data-theme="dark"] .how,
+html[data-theme="dark"] .pricing,
+html[data-theme="dark"] .faq {
+  background-color: #141B2A !important;
+}
+
+html[data-theme="dark"] .difference,
+html[data-theme="dark"] .trust,
+html[data-theme="dark"] .zone {
+  background-color: #1C2436 !important;
+}
+
+html[data-theme="dark"] .problem { background-color: #1F2A44 !important; }
