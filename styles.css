@@ -142,7 +142,7 @@
     padding: 20px 0;
   }
   .header.scrolled {
-    background: rgba(250,249,247,.95);
+    background: white;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 1px 24px rgba(31,42,68,.08);

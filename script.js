@@ -127,19 +127,4 @@ document.addEventListener('click', function (e) {
     }
   
   })();
-  /* ---- MODO OSCURO ---- */
-const themeToggle = document.getElementById('themeToggle');
-const root        = document.documentElement;
-
 // Recupera preferencia guardada o detecta la del sistema
-const saved  = localStorage.getItem('mhc-theme');
-const system = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-const initial = saved || system;
-if (initial === 'dark') root.setAttribute('data-theme', 'dark');
-
-themeToggle.addEventListener('click', function () {
-  const isDark = root.getAttribute('data-theme') === 'dark';
-  const next   = isDark ? 'light' : 'dark';
-  root.setAttribute('data-theme', next);
-  localStorage.setItem('mhc-theme', next);
-});
