@@ -1106,38 +1106,108 @@
     .cta-actions { flex-direction: column; }
     .btn-cta-wa, .btn-cta-tel { width: 100%; justify-content: center; }
         /*Nuevo*/
-    .hero-content{
-    display: flex;
+  }
+  /* ---- PROBLEMA SPLIT ---- */
+.problem-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.problem-img-wrap {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;        /* proporción vertical tipo retrato */
+  box-shadow: var(--shadow-lg);
+}
+
+.problem-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;  /* enfoca la parte superior de la foto */
+  display: block;
+  transition: transform 0.7s ease;
+}
+
+.problem-img-wrap:hover .problem-img {
+  transform: scale(1.03);       /* zoom suave al hover */
+}
+
+.problem-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.problem-text .section-sub {
+  margin-bottom: 0;             /* sin margen extra al final */
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .problem-split {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+/* MÓVIL */
+@media (max-width: 640px) {
+  .problem-split {
+    grid-template-columns: 1fr;  /* columna única */
+    gap: 32px;
+  }
+
+  .problem-img-wrap {
+    aspect-ratio: 4 / 3;         /* más ancha y menos alta en móvil */
+    max-height: 320px;
+  }
+}
+/* ---- SERVICIOS: CTA centrado al final ---- */
+.services-grid {
+  grid-template-columns: repeat(3, 1fr);  /* fuerza 3 columnas */
+}
+
+.service-card--cta {
+  grid-column: 1 / -1;          /* ocupa las 3 columnas */
+  display: flex;
+  flex-direction: row;           /* texto y botón en fila */
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 36px 48px;
+  border-style: solid;
+  border-color: rgba(168,142,99,.25);
+  max-width: 640px;
+  margin: 16px auto 0;          /* centrado horizontal */
+  width: 100%;
+}
+
+.service-card--cta .service-cta-text {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+/* MÓVIL */
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card--cta {
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    padding: 32px 24px;
+    text-align: center;
   }
+}
 
-  .hero-title{
-    font-size: 3rem;
-    line-height: 1.1;
+/* TABLET */
+@media (min-width: 641px) and (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .hero-text{
-    width: 100%;
-  }
-
-  .hero-image{
-    width: 100%;
-  }
-
-  .hero-image img{
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  }
-  
-
-
-
-  .contenedorcontendorgrande{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
+}
