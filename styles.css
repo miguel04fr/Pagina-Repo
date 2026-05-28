@@ -1058,16 +1058,45 @@
     .header-inner { gap: 0; }
   
     /* Nav mobile */
-    .nav.open {
-      display: flex;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: var(--azul);
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-  z-index: 998;  /* era 98, súbelo pero menos que el botón */
-    }
+   .nav.open {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;           /* dvh cubre bien en móvil con barra del navegador */
+  background: var(--azul);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 998;
+  overflow-y: auto;          /* scroll por si el contenido no cabe */
+  padding: 80px 24px 40px;   /* espacio arriba para el botón cerrar */
+}
+
+.nav.open ul {
+  flex-direction: column;
+  gap: 28px;
+  text-align: center;
+  width: 100%;
+}
+
+.nav.open a {
+  font-size: 1.6rem;
+  font-family: var(--font-titulo);
+  color: rgba(255,255,255,.85);
+  display: block;
+  padding: 8px 0;
+}
+
+.nav.open a:hover {
+  color: var(--dorado);
+}
+
+.nav.open a::after { display: none; } 
     .nav.open ul {
       flex-direction: column;
       gap: 32px;
@@ -1277,6 +1306,7 @@
 [data-theme="dark"] .compare-divider     { background: #1C2436 !important; }
 
 [data-theme="dark"] .footer              { background: #0D1420 !important; }
+[data-theme="dark"] .map-visual { color: #E8DDCF !important; }
 
 /* Header scrolled en dark */
 [data-theme="dark"] .header.scrolled {
